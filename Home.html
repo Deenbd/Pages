@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Deen Pages : Create your profile page for free!</title>
+	<link href="logo.png" rel="icon">
+	<style type="text/css">
+		body {
+			background-color: #af0101;
+			font-family: cursive;
+		}
+
+		header {
+			background-color: #ff9595;
+			height: 100px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between; /* ডান পাশে নিতে সাহায্য করবে */
+			padding: 0 20px; /* দুই পাশে কিছু গ্যাপ রাখবে */
+		}
+
+		header div {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+		}
+
+		a {
+			text-decoration: none; /*  Link এর আন্ডারলাইন সরানো */
+			color: inherit; /* লিংকের রঙ যেন ডিফল্ট না হয় */
+		}
+
+		.logo {
+			border-radius: 50px;
+			margin: 10px;
+		}
+
+		.homename {
+			font-size: 50px;
+			margin-left: 10px;
+		}
+
+		.pages {
+			margin-left: auto; /* এটিকে ডান পাশে ঠেলে দেবে */
+			margin-right: 20px;
+		}
+
+		button {
+			border-radius: 15px;
+			background-color: #2ee100;
+			font-size: 30px;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #51b836;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="">
+			<div>
+				<img class="logo" src="logo.png"> 
+				<b><p class="homename">Deen Pages</p></b>
+			</div>
+		</a>
+		<div class="pages">
+			<a href="">
+				<button><b>Create Now!</b></button>
+			</a>
+		</div>
+	</header>
+</body>
+</html>
