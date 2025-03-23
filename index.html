@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Deen Pages : Create your profile page for free!</title>
-	<link href="logo.png" rel="icon">
+	<link href="onlylogo.png" rel="icon">
 	<style type="text/css">
 		body {
 			background-color: #af0101;
@@ -17,8 +17,8 @@
 			width: 100%;
 			display: flex;
 			align-items: center;
-			justify-content: space-between; /* ডান পাশে নিতে সাহায্য করবে */
-			padding: 0 20px; /* দুই পাশে কিছু গ্যাপ রাখবে */
+			justify-content: space-between;
+			padding: 0 20px;
 		}
 
 		header div {
@@ -28,13 +28,15 @@
 		}
 
 		a {
-			text-decoration: none; /*  Link এর আন্ডারলাইন সরানো */
-			color: inherit; /* লিংকের রঙ যেন ডিফল্ট না হয় */
+			text-decoration: none;
+			color: inherit;
 		}
 
 		.logo {
 			border-radius: 50px;
 			margin: 10px;
+			height: 80px;
+			width: 80px;
 		}
 
 		.homename {
@@ -43,7 +45,7 @@
 		}
 
 		.pages {
-			margin-left: auto; /* এটিকে ডান পাশে ঠেলে দেবে */
+			margin-left: auto;
 			margin-right: 20px;
 		}
 
@@ -59,6 +61,48 @@
 		button:hover {
 			background-color: #51b836;
 		}
+
+		.page {
+			margin-right: 15px;
+			font-size: 30px;
+		}
+
+		.pgm button {
+			margin-right: 15px;
+			font-size: 30px;
+			background-color: #005903;
+			color: white;
+		}
+
+		.pgm button:hover {
+			background-color: #019306;
+		}
+
+		.honame {
+			display: flex; /* Flexbox ব্যবহার করা হয়েছে */
+			align-items: flex-start; /* উপরে উঠানো হবে */
+			margin: 20px;
+		}
+
+		.ho {
+			margin-right: 20px;
+		}
+
+		/* ✅ h1 এবং h3 এর পজিশনিং */
+		h1 {
+			color: white;
+			font-size: 60px;
+			margin: 0;
+			position: relative;
+			top: 35px; /* h1 টেক্সটকে একটু উপরে তুলতে */
+		}
+
+		h3 {
+			color: white;
+			font-size: 30px;
+			margin: 0;
+			margin-top: 45px; /* h1 এর নিচে সামান্য গ্যাপ */
+		}
 	</style>
 </head>
 <body>
@@ -70,13 +114,26 @@
 			</div>
 		</a>
 		<div class="pages">
-			<a href="https://deenbd.github.io/Pages/">Home</a>
-			<a href="https://deenbd.github.io/Pages/about.html">About</a>
-			<a href="https://deenbd.github.io/Pages/join.html"></a>
-			<a href="https://deenbd.github.io/Pages/create-profile.html">
+			<a class="pgm" href="https://deenbd.github.io/Pages/">
+			<button><b>Home</b></button></a>
+			<a class="page" href="https://deenbd.github.io/Pages/about.html">
+			<button><b>About</b></button></a>
+			<a class="page" href="https://deenbd.github.io/Pages/join.html">
+				<button><b>Join</b></button>
+			</a>
+			<a class="page" href="https://deenbd.github.io/Pages/create-profile.html">
 				<button><b>Create Now!</b></button>
 			</a>
 		</div>
 	</header>
+	
+	<!-- ✅ h1 উপরে, h3 নিচে কিন্তু ho.png এর ডানে -->
+	<div class="honame">
+		<img class="ho" src="ho.png">
+		<div>
+			<h1>Deen Pages</h1>
+			<h3>Create your profile page for free!</h3>
+		</div>
+	</div>
 </body>
 </html>
